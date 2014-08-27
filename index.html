@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>thanks</title>
+    <link rel="stylesheet" href="assets/css/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/thanks.css">
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/semantic.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="app/thanks.js"></script>
+    <script>
+        $(document).ready(function() {
+            THANKS.start();
+        });
+    </script>
+</head>
+
+<body>
+
+    <section class="grid"></section>
+
+    <script type="text/tmpl" id="column-tmpl">
+        <div class="column" data-index="1"></div>
+        <div class="column" data-index="2"></div>
+        <div class="column" data-index="3"></div>
+        <div class="column" data-index="4"></div>
+        <div class="column" data-index="5"></div>
+        <div class="column" data-index="6"></div>
+        <div class="column" data-index="7"></div>
+        <div class="column" data-index="8"></div>
+        <div class="column" data-index="9"></div>
+        <div class="column" data-index="10"></div>
+        <div class="column" data-index="11"></div>
+        <div class="column" data-index="12"></div>
+        <div class="column" data-index="13"></div>
+        <div class="column" data-index="14"></div>
+        <div class="column" data-index="15"></div>
+        <div class="column" data-index="16"></div>
+        <div class="column" data-index="17"></div>
+    </script>
+    <script type="text/tmpl" id="cube-tmpl">
+    <div class="ui cube shape" data-letter="<%=char%>">
+    <div class="sides">
+                <%
+                    for (j=0;j<4;j++){
+                %>
+                  <div class="side">
+                    <div class="content">
+                        <div class="center">
+                            <%=THANKS.getRandomLetter()%>
+                        </div>
+                    </div>
+                  </div>
+                <%
+                    }
+                %>
+    </div>
+    </div>
+    </script>
+</body>
+
+</html>
