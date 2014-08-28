@@ -38,3 +38,8 @@ div.content {
 .ui.cube.shape.flipsStart div.content {
     color: #FFF;
 }
+div.message {
+    color: #FFFFFF;
+    font-size: 19px;
+    text-align: center;
+}
